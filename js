@@ -1,3 +1,19 @@
+#### array sum #####
+
+var arr1=[1,2,3,4,5]
+var arr2=[10,20,30,40,50]
+var arr3=[2,4,6,8,10]
+function arrAdd(arr){
+    var sum=0
+    for(var i=0;i<arr.length;i++){
+        sum+=arr[i]
+    }
+    console.log(sum);
+}
+arrAdd(arr1);
+arrAdd(arr2);
+arrAdd(arr3);
+
 ######     Switch Cases    ######
 
 var date = new Date();
@@ -28,21 +44,7 @@ switch (today){
         console.log('not a day');
 }
 
-#### array sum #####
 
-var arr1=[1,2,3,4,5]
-var arr2=[10,20,30,40,50]
-var arr3=[2,4,6,8,10]
-function arrAdd(arr){
-    var sum=0
-    for(var i=0;i<arr.length;i++){
-        sum+=arr[i]
-    }
-    console.log(sum);
-}
-arrAdd(arr1);
-arrAdd(arr2);
-arrAdd(arr3);
 
 #######    Functions Rest Parameters ######
 function sum(...theArgs) {
