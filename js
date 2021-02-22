@@ -72,5 +72,16 @@ console.log(sum(...numbers));
 console.log(sum.apply(null, numbers));
 // expected output: 6
 
+######## Closures  ########
+function bankAccount(initiabalance){
+    var balance = initiabalance;
+     return function(){
+        return balance;
+    }
+}
+var account =bankAccount(1000);
+console.log(account());
+
+
 
 
