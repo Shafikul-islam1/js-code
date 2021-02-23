@@ -105,6 +105,29 @@ shafikul.play();
 const rubel =Person("rubel islam",25);
 rubel.play();
 
+#up prototype
+
+function Person(name, age){
+   this.name = name;
+    this.age = age;
+   
+};
+Person.prototype={
+    eat(){
+        console.log(`Person is eating`)
+    },
+    sleep(){
+        console.log(`Person is sleeping`)
+    },
+    play(){
+        console.log(`Person is playing`)
+    }
+};
+const shafikul=new Person("shafikul islam",24);
+const rubel = new Person("rubel islam",25);
+shafikul.sleep();
+rubel.play();
+
 
 
 
