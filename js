@@ -82,6 +82,29 @@ function bankAccount(initiabalance){
 var account =bankAccount(1000);
 console.log(account());
 
+######## Prototype #########
+function Person(name, age){
+    let person = Object.create(Person.prototype);
+    person.name = name;
+    person.age = age;
+    return person;
+};
+Person.prototype={
+    eat(){
+        console.log(`Person is eating`)
+    },
+    sleep(){
+        console.log(`Person is sleeping`)
+    },
+    play(){
+        console.log(`Person is playing`)
+    }
+};
+const shafikul=Person("shafikul islam",24);
+shafikul.play();
+const rubel =Person("rubel islam",25);
+rubel.play();
+
 
 
 
