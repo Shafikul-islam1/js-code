@@ -1,4 +1,4 @@
-##Types
+//##Types
 String let custom erName: string= "John Doe";
 
 Number let price: number = 19.95;
@@ -23,7 +23,7 @@ console.log(msg);
 
 Const const lives: number = 99;
 
-##Classes
+//##Classes
 class OrderLogic {
 
 con str uct or( public order: IOrder) { }
@@ -39,7 +39,7 @@ return sum;
 
 }
 
-##Abstract Classes
+//##Abstract Classes
 
 abstract class Person {
 name: string;
@@ -48,7 +48,7 @@ mon thl yBe nefits: number;
 abs tract calcSa lary(): number;
 }
 
-## Interfaces
+//## Interfaces
 interface IOrderDetail {
 pro duc tName: string;
 qua ntity: number;
@@ -94,7 +94,7 @@ class AnalogClock implements ClockInterface {
 let digital = createClock(DigitalClock, 12, 17);
 let analog = createClock(AnalogClock, 7, 32);
 
-##Optional Parameters
+//##Optional Parameters
 
 class Util {
 log (msg: string, logDate?: Date) {
@@ -105,7 +105,7 @@ con sol e.l og(new Date() + ' ' + msg);
 }
 }
 
-### Rest Parameters
+//### Rest Parameters
 class Order {
 add Ord erD eta ils (...or der Det ails: IOrder Det ail[]) {
 }
@@ -135,14 +135,14 @@ get Loc ati on(): number {
 }
 
 
-##Usage
+//##Usage
 
 Installing TypeScript npm npm install -g typescript
 Compiling TypeScript tsc somefi le.ts
 TypeScript Docs TypeScriptLang.org
 Type Definition Files DefinatelyTyped.org
 
-##Scope/ Mod ifiers
+//##Scope/ Mod ifiers
 
 Public (default) public firstName: string;
 Protected protected inventory: number;
@@ -150,7 +150,7 @@ Private private outOfS tock: boolean;
 Read Only readonly pi: number = 3.14159;
 Static static log(msg: string) { consol e.l og(msg) };
 
-##Namespaces
+//##Namespaces
 
 namespace AcmeCorp.Logging {
 export class Logger {
@@ -171,4 +171,4 @@ return 0;
 }
 }
 
-12.2.21/shafikul.dev
+//12.2.21/shafikul.dev
