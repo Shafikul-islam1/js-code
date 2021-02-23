@@ -105,7 +105,7 @@ shafikul.play();
 const rubel =Person("rubel islam",25);
 rubel.play();
 
-#up prototype
+#up prototype-1
 
 function Person(name, age){
    this.name = name;
@@ -123,6 +123,30 @@ Person.prototype={
         console.log(`Person is playing`)
     }
 };
+const shafikul=new Person("shafikul islam",24);
+const rubel = new Person("rubel islam",25);
+shafikul.sleep();
+rubel.play();
+  
+#up prototype-2
+class Person{
+    constructor(name, age){
+         this.name = name;
+         this.age = age;
+ }
+   
+
+    eat(){
+        console.log(`Person is eating`)
+    }
+    sleep(){
+        console.log(`Person is sleeping`)
+    }
+    play(){
+        console.log(`Person is playing`)
+    }
+};
+
 const shafikul=new Person("shafikul islam",24);
 const rubel = new Person("rubel islam",25);
 shafikul.sleep();
