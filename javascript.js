@@ -175,3 +175,30 @@ let shafikul= new Cricketer("shfaikul islam",35,"All rounder","Bangladesh");
 
 
 console.log(shafikul.eat());
+
+// #### Class Inheritance ####
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    eat() {
+       console.log(`${this.name} is eating`);
+    }
+
+}
+class Cricket extends Person {
+    constructor(name, age,type,country){
+        super(name, age);
+        this.name = name;
+        this.age = age;
+        this.type = type;
+        this.country = country;
+    }
+    play(){
+        console.log(`${this.name} is playing`);
+    }
+}
+let shafikul=new Cricket("shafikul isam",24,"boller","bangladesh");
+console.log(shafikul.age);
+shafikul.play();
