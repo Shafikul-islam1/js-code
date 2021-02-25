@@ -241,3 +241,5 @@ class Person {
 }
 let shafikul= new Person("shfaikul islam",24);
 Person.isEqualAge();
+
+// JavaScript encapsulation
