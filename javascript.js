@@ -202,3 +202,26 @@ class Cricket extends Person {
 let shafikul=new Cricket("shafikul isam",24,"boller","bangladesh");
 console.log(shafikul.age);
 shafikul.play();
+
+
+// #### Property getters and setters ####
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    eat() {
+       console.log(`${this.name} is eating`);
+    }
+
+    get setName(){
+       return this.name; 
+    }
+    set setName(name){
+        this.name = name;
+    }
+}
+let shafikul= new Person("shfaikul islam",24);
+// console.log(shafikul.setName);\\ getters
+ shafikul.setName="Rube"; // setters
+ console.log(shafikul.name);
