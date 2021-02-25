@@ -225,3 +225,19 @@ let shafikul= new Person("shfaikul islam",24);
 // console.log(shafikul.setName);\\ getters
  shafikul.setName="Rube"; // setters
  console.log(shafikul.name);
+
+// #### Static Methods  ####
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    eat() {
+       console.log(`${this.name} is eating`);
+    }
+   static isEqualAge(){
+       console.log(`my name is shafikul`)
+   }
+}
+let shafikul= new Person("shfaikul islam",24);
+Person.isEqualAge();
