@@ -324,4 +324,20 @@ var a2="program"
 var a3="web";
 var a =[a1, a2, a3];
 
-printName.call(shafikul, a);
+printName.apply(shafikul, a);
+
+// bind()
+var printName = function(a1,a2,a3){
+    console.log(`${this.name}is ${a1},${a2},${a3}`);
+}
+var shafikul={
+    name:"Shafikul islam",
+    age:18
+};
+var a1="engineer";
+var a2="program"
+var a3="web";
+
+var newFun = printName.bind(shafikul,a1,a2,a3);
+newFun();
+
