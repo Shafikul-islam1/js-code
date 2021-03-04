@@ -341,3 +341,20 @@ var a3="web";
 var newFun = printName.bind(shafikul,a1,a2,a3);
 newFun();
 
+// new binding
+function Person(name, age){
+    this.name = name;
+    this.age = age;
+    console.log(`${name} is ${age} years old`);
+}
+var shafikul =new Person("shafikul islam",35);
+
+// window binding
+"use strict";
+var PrintName = function(){
+    console.log(this.name);
+};
+var shafikul = {
+    name:"shafikul",
+};
+PrintName();
