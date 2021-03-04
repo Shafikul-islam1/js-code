@@ -294,3 +294,34 @@ var Person = function(name,age){
  var shafikul = Person("shafikul",35);
  shafikul.printName();
  shafikul.father.printName();
+
+// ####### Explicit binding##########
+// call()
+var printName = function(a1,a2,a3){
+    console.log(`${this.name}is ${a1},${a2},${a3}`);
+}
+var shafikul={
+    name:"Shafikul islam",
+    age:18
+};
+var a1="engines";
+var a2="program"
+var a3="web";
+
+printName.call(shafikul,a1,a2,a3);
+
+// apply()
+var printName = function(a1,a2,a3){
+    console.log(`${this.name}is ${a1}, ${a2}, ${a3}`);
+};
+
+var shafikul = {
+    name: "Shafikul islam",
+    age: 18,
+};
+var a1="engineer";
+var a2="program"
+var a3="web";
+var a =[a1, a2, a3];
+
+printName.call(shafikul, a);
