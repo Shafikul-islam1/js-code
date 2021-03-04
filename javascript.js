@@ -274,3 +274,23 @@ boundFn1();
 // Support: same as your jQuery version, available since 1.4
 var boundFn2 = $.proxy(fn, context, args[0], args[1]);
 boundFn2();
+
+// ##### implicit binding #######
+var Person = function(name,age){
+    return {
+        name: name,
+        age: age,
+        printName: function(){
+            console.log(this.name);
+        },
+        father:{
+            name:'Mr . xx',
+            printName: function(){
+                console.log(this.name);
+            }
+        }
+    };
+};
+ var shafikul = Person("shafikul",35);
+ shafikul.printName();
+ shafikul.father.printName();
